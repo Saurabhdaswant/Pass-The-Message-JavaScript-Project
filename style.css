@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 *,
 *::after,
@@ -6,12 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Russo One", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
   background-color: #ccc;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 main {
@@ -26,16 +27,13 @@ main {
   padding: 5rem;
   box-shadow: rgb(0 0 0 / 10%) 0px 8px 40px;
   border-radius: 10px;
-  font-size: 2rem;
 }
 
-h1,
 h2 {
   margin-bottom: 2rem;
 }
 
 .btn {
-  max-width: 50%;
   margin: 2rem auto;
   cursor: pointer;
   background-color: #00b4d8;
