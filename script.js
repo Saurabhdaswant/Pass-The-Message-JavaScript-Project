@@ -1,10 +1,18 @@
 const input = document.getElementById("input");
-const message = document.querySelector(".message");
+let message = document.querySelector(".message");
 const btn = document.querySelector(".btn");
 
-document.querySelector(".btn").addEventListener("click", function () {
+const displayMessage = function () {
   let messageInput = document.querySelector("input").value;
-  console.log(messageInput, typeof messageInput);
-
   message.textContent = messageInput;
+};
+
+document.querySelector(".btn").addEventListener("click", displayMessage);
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    displayMessage();
+
+    document.querySelector(".input").value = "";
+  }
 });
